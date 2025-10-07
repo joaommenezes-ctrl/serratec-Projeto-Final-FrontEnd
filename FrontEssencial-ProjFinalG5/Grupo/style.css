@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'FonteHarryPobre';
+  src: url('/assets/font/HARRYP__.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  height: 100px;
+  border-radius: 0 0 20px 20px;
+}
+
+body {
+  background: linear-gradient(135deg, #1f1b2e, #362a37);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0px;
+  text-align: center;
+  cursor: url('/assets/cursor-hp.png'), auto;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.grupo-titulo {
+  font-family: 'FonteHarryPobre';
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 400;
+  color: #fff;
+  padding-top: 5rem;
+  margin: 3rem 0 1rem 0;
+  position: relative;
+}
+
+.team{
+  background: rgb(119, 115, 112);
+  padding: 1rem;
+  border-radius: 1.8rem;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  border: 15px solid #362a37;
+}
+
+.member {
+  
+  background: rgb(119, 115, 112);
+  padding: 1rem;
+  border-radius: 1.8rem;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  border: 15px solid #362a37;
+}
+
+.member img {
+  width: 18.75rem;
+  height: 18.75rem;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.member h2 {
+  margin: 0.6rem 0 0.4rem;
+  font-size: 1.2rem;
+}
+
+.member p {
+  font-size: 0.9rem;
+  color: black;
+}
+
+.btn-voltar {
+  font-family: 'FonteHarryPobre';
+  font-size: 2rem;
+  margin-top: 1rem;
+  background-color: white;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #8a2be2;
+  color: white;
+}
+
+.cursor-glow {
+  cursor: url('/assets/varinha-cursor.png'), auto;
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 15px 10px purple,
+    0 0 25px 15px purple;
+  z-index: 9999;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+.btn-carrinho {
+  background-color: #545454;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  transition: 0.3s ease;
+}
+
+.btn-carrinho:hover {
+  background-color: #e0b800;
+  color: #222;
+}

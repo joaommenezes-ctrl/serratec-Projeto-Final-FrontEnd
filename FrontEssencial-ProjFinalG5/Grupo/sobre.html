@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+  <title>Quem somos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="../global.css">
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-link" href="#">
+        <div class="logo-image"></div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Grupo/sobre.html">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/FAQ/faq.html">FAQ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Área de cadastro
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/login/login.html">Login</a></li>
+              <li><a class="dropdown-item" href="/cadastro/cadastro.html">Cadastre-se</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <a href="/Compras/carrinho.html" class="btn btn-warning ms-2 d-flex align-items-center">
+        🛒 Carrinho
+      </a>
+    </div>
+  </nav>
+
+  <h1 class="grupo-titulo text-center mt-5">Nossos artífices</h1>
+
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+      <div class="col">
+        <div class="member">
+          <img src="/assets/integrantes/will-mago-anciao.png" alt="Integrante 1" />
+          <h2>William Lippi</h2>
+          <p>Com a sabedoria do tempo, é nosso mago ancião.<br>Está sempre cuidando da sua equipe.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="member">
+          <img src="/assets/integrantes/giselle-feiticeira.png" alt="Integrante 2" />
+          <h2>Giselle Garcia</h2>
+          <p>Com a magia do design, é a feiticeira dos estilos e garante o carrinho de compras para os harry pobrers.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="member">
+          <img src="/assets/integrantes/joao-bruxo.png" alt="Integrante 3" />
+          <h2>João Gabriel</h2>
+          <p>“console.log('Mago detectado — prepare-se para o imprevisível')”</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="member">
+          <img src="/assets/integrantes/hugo-mago.png" alt="Integrante 4" />
+          <h2>Hugo</h2>
+          <p>Bruxo da mais alta casta, usa seus poderes para gerenciar os acessos do Harry Pobre.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="member">
+          <img src="/assets/integrantes/nicolle-feiticeira.png" alt="Integrante 5" />
+          <h2>Nicolle Parisi</h2>
+          <p>Poderosa feiticeira dos logins, usa sua magia para garantir que todos tenham acesso ao Harry Pobre.</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="member">
+          <img src="/assets/integrantes/arthur-bruxo.png" alt="Integrante 6" />
+          <h2>Arthur</h2>
+          <p>Este bruxo tem uma magia com a capacidade de estilizar tudo que vê.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <a href="/home/home.html" class="button btn-voltar">Voltar para a Home</a>
+  </div>
+  <div class="footer">
+    @ 2025 Harry Pobre - Todos os direitos reservados.
+    <hr>
+    Volte sempre.
+  </div>
+
+  <audio id="audio">
+    <source src="/assets/Fireworks [xRjjq9dR7R4].mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b11a4bf263.js" crossorigin="anonymous"></script>
+  <script src="../globalscript.js"></script>
+  <script src="home.js"></script>
+  <script src="/Grupo/sobre.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'FonteHarryPobre';
+    src: url('/assets/font/HARRYP__.TTF') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    height: 6.25rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+
+body {
+    background: linear-gradient(135deg, #1f1b2e, #362a37);
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    height: '100%';
+    width: 100vw;
+}
+
+.descricao-pocao {
+    font-family: 'FonteHarryPobre';
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-size: 3em;
+    color: #f0c0ff;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.btn-adcCarrinho {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    margin-bottom: 5rem;
+}
+
+
+#img_container {
+    flex-shrink: 0;
+}
+
+#img_container img {
+    max-width: 20rem;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border: 15px solid #362a37;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#img_container img:hover {
+    transform: scale(1.05);
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.7);
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Cursive', sans-serif;
+    font-size: 2.5em;
+    color: #f0c0ff;
+    text-shadow: 2px 2px 10px #000;
+}
+
+
+.texto {
+    max-width: 650px;
+    margin-top: 40px;
+    line-height: 1.6;
+}
+
+.texto p {
+    margin-bottom: 1em;
+}
+
+.texto ul {
+    margin-bottom: 1.5em;
+    padding-left: 20px;
+}
+
+.texto ul li:first-child {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.pocao-valor h3 {
+    font-family: 'FonteHarryPobre';
+    font-size: 1rem;
+    margin: 0.5rem;
+    margin-top: 2rem;
+}
+
+.pocao-valor h2 {
+    
+    font-family: 'FonteHarryPobre';
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 10px #000;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.carrinho {
+    background-color: #f0c0ff;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 300px;
+    margin-bottom: 5rem;
+}
+
+.carrinho:hover {
+    background-color: green;
+    color: #fff
+}
+
+.cursor-glow {
+    cursor: url('/assets/varinha-cursor.png'), auto;
+    position: fixed;
+    width: 2px;
+    height: 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 10px purple,
+        0 0 25px 15px purple;
+    z-index: 9999;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease-out;
+}
+
+
+@media (min-width: 769px) {
+    .container {
+        flex-direction: row; 
+        gap: 20px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    #img_container img {
+        max-width: 50rem;
+    }
+}
+
+/* @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+} */
+
+.texto {
+    margin-top: 40px;
+    line-height: 1.6;
+}

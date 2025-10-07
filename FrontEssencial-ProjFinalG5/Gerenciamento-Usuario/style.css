@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+@font-face {
+  font-family: 'FonteHarryPobre';
+  src: url('/assets/font/HARRYP__.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  height: 6.25rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+body {
+ background: linear-gradient(135deg, #1f1b2e, #362a37);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  background: #4a90e2;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+a.button:hover {
+  background: #357ab7;
+}
+
+a.delete {
+  background: #e74c3c;
+}
+
+a.delete:hover {
+  background: #c0392b;
+}
+
+a.put {
+  background: #f39c12;
+}
+
+a.put:hover {
+  background: #d68910;
+}
+.button-secondary-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'MedievalSharp', cursive;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .button-container {
+    width: 100%;
+    gap: 12px;
+  }
+
+  a.button {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+  }
+}

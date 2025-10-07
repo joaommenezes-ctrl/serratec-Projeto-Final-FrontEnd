@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+@font-face {
+    font-family: 'FonteHarryPobre'; 
+    src: url('/assets/font/HARRYP__.TTF') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 6.25rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+body {
+    background: linear-gradient(
+  180deg,
+  rgba(63, 59, 54, 1) 0%,    
+  rgba(110, 70, 50, 1) 65%,  
+  rgba(175, 90, 45, 1) 85%,  
+  rgba(220, 120, 40, 1) 100%
+);
+  background-size: cover;
+  color: #f5deb3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 30px;
+}
+
+.forms-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-box {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #8b0000;
+  width: 320px;
+  text-align: center;
+}
+
+.form-box h2 {
+  font-size: 1.8rem;
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fdf3e7;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 1rem;
+}
+
+.form-box input:focus {
+  outline: 2px solid #ffd700;
+}
+
+.button, .secondary-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'MedievalSharp', cursive;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.button {
+  background-color: #000;
+  color: #ffd700;
+}
+
+.button:hover {
+  background-color: #222;
+}
+
+.secondary-btn {
+  background-color: #555;
+  color: #fff;
+}
+
+.secondary-btn:hover {
+  background-color: #777;
+}
+
+@media (max-width: 400px) {
+    .form-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 13px;
+        height: 32px;
+    }
+}

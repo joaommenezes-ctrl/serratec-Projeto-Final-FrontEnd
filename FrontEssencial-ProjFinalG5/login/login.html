@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="/login/style.css" />
+  <link rel="stylesheet" href="/global.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand logo-link" href="#">
+        <div class="logo-image"></div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/home/home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/Grupo/sobre.html">Quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/FAQ/faq.html">FAQ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Área de cadastro
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/login/login.html">Login</a></li>
+              <li><a class="dropdown-item" href="../Cadastro/cadastro.html">Cadastre-se</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+       <a href="/Compras/carrinho.html" class="btn btn-warning ms-2 d-flex align-items-center">
+          🛒 Carrinho
+        </a>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Bem-vindo</h1>
+    <section class="forms-container">
+      <div class="form-box">
+        <h2>Login</h2>
+        <form onsubmit="login(event)">
+          <input id="login-email" type="email" placeholder="Digite seu e-mail" required />
+          <input id="login-password" type="password" placeholder="Digite sua senha" required />
+          <button type="submit" class="button">Entrar</button>
+          <a href="/cadastro/cadastro.html" class="button secondary-btn">Criar conta</a>
+          <a href="/home/home.html" class="button voltar-btn">Voltar</a>
+        </form>
+      </div>
+    </section>
+  </main>
+  <audio id="audio">
+    <source src="/assets/Fireworks [xRjjq9dR7R4].mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b11a4bf263.js" crossorigin="anonymous"></script>
+  <script src="../globalscript.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

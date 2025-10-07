@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho de Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Compras/style.css">
+    <link rel="stylesheet" href="/global.css">
+
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+    <script src="/globalscript.js"></script>
+
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top me-auto" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand logo-link" href="#">
+                <div class="logo-image"></div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Grupo/sobre.html">Quem somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/FAQ/faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Área de cadastro
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/login/login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="../Cadastro/cadastro.html">Cadastre-se</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div
+                    class="text-center d-flex ms-auto align-items-center gap-2 mr-2 p-2 border border-light border-2 rounded-pill">
+                    <p class="m-0">Compre ouvindo uma música</p>
+                    <i class="fa-solid fa-circle-play fs-3" onclick="document.getElementById('audio').play()"></i>
+                    <i class="fa-solid fa-circle-pause fs-3" onclick="document.getElementById('audio').pause()"></i>
+                </div>
+
+                <a href="/Compras/carrinho.html" class="btn btn-carrinho ms-2 d-flex align-items-center">
+                    🛒 Carrinho
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="audio">
+        <source src="/assets/Fireworks [xRjjq9dR7R4].mp3" type="audio/mpeg" />
+    </audio>
+
+    <main class="container">
+        <h1 class="titulo-carrinho">Carrinho</h1>
+    
+        <div class="d-flex flex-column w-100"> <ul id="carrinho" class="product-list d-flex flex-column w-100">
+                </ul>
+        </div>
+        
+        <div>
+            <div class="total">
+                <strong>Total:</strong> <span id="total-carrinho"></span>
+            </div>
+    
+            <div class="buttons d-flex justify-content-between">
+                <a href="/home/home.html" class="btn voltar"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+                <button class="btn finalizar" onclick="finalizarCompra()"><i class="fa-solid fa-circle-check"></i> Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b11a4bf263.js" crossorigin="anonymous"></script>
+    <script type='module' src="../scriptcarrinho.js"></script>
+    <script src="../scripts-carrinho/removerProdutoDoLocalStorage.js"></script>
+    <script src="../scripts-carrinho/somarTotalCarrinho.js"></script>
+    <script src="/home/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+{
+    "pocoes": [
+        {
+            "id": 9,
+            "nome": "Elixir do Front Bonito",
+            "preco": "50,90",
+            "imagem": "/assets/pocoes/potion00009.png"
+        },
+        {
+            "id": 8,
+            "nome": "Poção do Deadline Infinito",
+            "preco": "70,90",
+            "imagem": "/assets/pocoes/potion00008.png"
+        },
+        {
+            "id": 7,
+            "nome": "Poção do Stack Overflow Instantâneo",
+            "preco": "60,90",
+            "imagem": "/assets/pocoes/potion00007.png"
+        },
+        {
+            "id": 6,
+            "nome": "Poção do Infinite Loop Social",
+            "preco": "50,90",
+            "imagem": "/assets/pocoes/potion00006.png"
+        },
+        {
+            "id": 5,
+            "nome": "Elixir do Ctrl+Z Ilimitado",
+            "preco": "55,90",
+            "imagem": "/assets/pocoes/potion00005.png"
+        },
+        {
+            "id": 4,
+            "nome": "Poção do Estagiário Sênior",
+            "preco": "57,90",
+            "imagem": "/assets/pocoes/potion00004.png"
+        },
+        {
+            "id": 3,
+            "nome": "Poção do Google Mestre",
+            "preco": "50,90",
+            "imagem": "/assets/pocoes/potion00003.png"
+        },
+        {
+            "id": 2,
+            "nome": "Elixir do Café Infinito",
+            "preco": "50,90",
+            "imagem": "/assets/pocoes/potion00002.png"
+        },
+        {
+            "id": 1,
+            "nome": "Poção do While (true)",
+            "preco": "68,90",
+            "imagem": "/assets/pocoes/potion00001.png"
+        }
+    ]
+} 

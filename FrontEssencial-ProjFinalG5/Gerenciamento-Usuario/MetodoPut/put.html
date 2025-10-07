@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/Gerenciamento-Usuario/style.css">
+  <script src="../../globalscript.js"></script>
+  <script src="./script.js"></script>
+  <title>Metodo Put</title>
+</head>
+
+<body>
+
+  <div class="form-container">
+    <h2>Editar Usuário</h2>
+    <form onsubmit="updateUser(event)">
+      <input type="text" id="nome" placeholder="Nome" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="senha" placeholder="Senha" required>
+      <input type="text" id="idUser" placeholder="ID do usuário" required>
+      <button type="submit">Salvar Alterações</button>
+    </form>
+    <a href="/Gerenciamento-Usuario/Gerenciamento.html" class="button-secondary-btn">Voltar</a>
+  </div>
+</body>
+
+</html>
